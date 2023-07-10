@@ -1,0 +1,33 @@
+body {
+    color: #d8d4cf;
+    background-color: #232729;
+    font-family: "Verdana";
+    font-size: small
+}
+h1 {
+    color: #94a7b7
+}
+h2 {
+    color: #333366
+}
+h3 {
+    color: #7cacd8
+}
+h4 {
+    font-size: small
+}
+blockquote {
+    font-size: small;
+    margin-left: 10pt
+}
+pre {
+    font-size: small;
+    margin-left: 10pt
+}
+
+a:link {
+    color: rgb(23, 134, 194);
+}
+a:visited {
+    color: rgb(170, 91, 170);
+}

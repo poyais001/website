@@ -1,0 +1,24 @@
+.imgArea {
+    width: 33.3%;
+    float: left;
+}
+
+.imgBox {
+    border: 1px solid #777;
+    padding: 6px;
+    margin: 12px 6px;
+}
+
+.imgOn:hover {
+    border: 1px solid #ccc;
+}
+
+.desc {
+    text-align: center;
+    padding: 0px;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}

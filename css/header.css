@@ -1,0 +1,37 @@
+.all {
+    background-color: #202020;
+    color: #e8e6e3;
+}
+.box {
+    width: 800px;
+    margin: auto;
+    background-color: #202020;
+}
+.sign {
+    font-style: italic;
+    font-weight: 300;
+}
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav-li {
+    float: left;
+}
+.nav-li-a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active {
+    background-color: #494949;
+}
+.mon:hover {
+    background-color: #555;
+    color: white;
+}

@@ -1,0 +1,348 @@
+allow-lan: true
+mode: rule
+log_level: info
+ipv6: true
+
+proxies:
+  - name: 新加坡-ipv6
+    type: vmess
+    server: 2001:19f0:4400:7127:5400:04ff:fe79:6d89
+    port: "54321"
+    uuid: 48829ea2-1fd0-4b76-d495-62364b2adde0
+    alterId: "0"
+    cipher: auto
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /test
+
+  - name: 新加坡-ipv4
+    type: vmess
+    server: 45.32.116.41
+    port: "54321"
+    uuid: 48829ea2-1fd0-4b76-d495-62364b2adde0
+    alterId: "0"
+    cipher: auto
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /test
+
+  - alterId: 2
+    cipher: auto
+    name: 香港-1
+    network: tcp
+    port: 8388
+    server: a0eb4bb9-rwicg0-q5px.hk.tcpbbr.net
+    tls: true
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+
+  - alterId: 2
+    cipher: auto
+    name: 香港-2
+    network: ws
+    port: 80
+    server: hkt.comefromchinatown.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 香港-3
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.hkt.gotochinatown.net
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 香港-4
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.hgc1.tcpbbr.net
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: www.hgcbroadband.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 香港-5
+    network: ws
+    port: 80
+    server: wtt2.comefromchinatown.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: images-eu.ssl-images-amazon.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 香港-6
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.bn.p5pv.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - name: 香港-7
+    password: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    port: 22443
+    server: a0eb4bb9-rwicg0-q5px.wtt5.p5pv.com
+    tls: true
+    type: http
+    username: 13069647698@163.com
+
+  - alterId: 2
+    cipher: auto
+    name: 美国-1
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.sj.comefromchinatown.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 美国-2
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.static.tcpbbr.net
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: www.hgcbroadband.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 美国-3
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.fremont.comefromchinatown.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: www.hgcbroadband.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 美国-4
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.us.tcpbbr.net
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: images-eu.ssl-images-amazon.com
+    ws-path: /
+
+  - name: 美国-5
+    password: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    port: 443
+    server: a0eb4bb9-rwicg0-q5px.denver.p1pv.com
+    tls: true
+    type: http
+    username: 13069647698@163.com
+
+  - alterId: 2
+    cipher: auto
+    name: 英国
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.uk.tcpbbr.net
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - name: 台湾-1
+    password: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    port: 61234
+    server: a0eb4bb9-rwicg0-q5px.tw4.tcpbbr.net
+    tls: true
+    type: http
+    username: 13069647698@163.com
+
+  - alterId: 2
+    cipher: auto
+    name: 台湾-2
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.tw3.p5pv.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /  
+    
+  - alterId: 2
+    cipher: auto
+    name: 日本
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.jp.p5pv.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - alterId: 2
+    cipher: auto
+    name: 韩国
+    network: ws
+    port: 80
+    server: a0eb4bb9-rwicg0-q5px.kr.p5pv.com
+    type: vmess
+    uuid: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    ws-headers:
+      Host: broadcastlv.chat.bilibili.com
+    ws-path: /
+
+  - name: 德国
+    password: 2347e282-08f6-11ee-bcb2-f23c91cfbbc9
+    port: 443
+    server: a0eb4bb9-rwicg0-q5px.de.p5pv.com
+    tls: true
+    type: http
+    username: 13069647698@163.com
+
+proxy-groups:
+  - name: 代理组选择
+    type: select
+    proxies:
+      - V6优先
+      - 全球智能
+
+  - name: V6优先
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+      - IPV6
+      - 全球智能
+
+  - name: IPV6
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    proxies:
+      - 新加坡-ipv6
+
+  - name: 全球智能
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    proxies:
+      - 香港-1
+      - 香港-2
+      - 香港-3
+      - 香港-4
+      - 香港-5
+      - 香港-6
+      - 香港-7
+      - 新加坡-ipv4
+      - 日本
+      - 韩国
+      - 台湾-1
+      - 台湾-2
+      - 英国
+      - 德国
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+
+  - name: ChatGPT
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    proxies:
+      - 美国-3
+      - 台湾-1
+      - 台湾-2
+      - 德国
+      - 英国
+
+  - name: New Bing
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    proxies:
+      - 英国
+      - 德国
+      - 香港-1
+      - 香港-2
+      - 香港-3
+      - 香港-4
+      - 香港-5
+      - 香港-6
+      - 香港-7
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+
+  - name: 台湾动漫
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    proxies:
+      - 台湾-1
+      - 台湾-2
+      
+rules:
+  - DOMAIN-KEYWORD,scholar.google,全球智能
+  - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+  - DOMAIN-SUFFIX,wx.qq.com,DIRECT
+  - DOMAIN-KEYWORD,dlut,DIRECT
+  - DOMAIN-SUFFIX,dlut.edu.cn,DIRECT
+  - DOMAIN-SUFFIX,icourse163.org,DIRECT
+  - DOMAIN-SUFFIX,music.163.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,csdn.net,DIRECT
+  - DOMAIN-SUFFIX,chaoxing.com,DIRECT
+  - DOMAIN-SUFFIX,xuexi.cn,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,wanfangdata.com.cn,DIRECT
+  - IP-CIDR,172.20.30.2/32,DIRECT
+  - IP-CIDR,172.20.30.1/21,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,182.254.116.0/24,DIRECT,no-resolve
+  - IP-CIDR,203.205.254.0/23,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,openai.com,ChatGPT
+  - DOMAIN-SUFFIX,bing.com,New Bing
+  - DOMAIN-SUFFIX,bingapis.com,New Bing
+  - DOMAIN,ani.gamer.com.tw,台湾动漫
+  - MATCH,代理组选择
