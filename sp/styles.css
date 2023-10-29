@@ -1,0 +1,61 @@
+/* 设置背景图片 */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 设置图片显示尺寸 */
+.image-container img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 100px;
+}
+
+.title {
+    color: red;
+    font-size: 36px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* 设置导航栏样式 */
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #ff0000; /* 红色背景 */
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 300px; /* 导航栏宽度为300px */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* 设置导航栏按钮样式 */
+.nav-btn {
+    text-decoration: none;
+    color: white; /* 白色文字 */
+    font-size: 20px; /* 字号增大 */
+    padding: 10px 20px; /* 按钮内边距 */
+    border: 2px solid white; /* 白色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    cursor: pointer; /* 鼠标指针样式为手型 */
+}
+
+.nav-btn:hover {
+    background-color: white; /* 鼠标悬停时背景变为白色 */
+    color: #ff0000; /* 文字颜色变为红色 */
+}

@@ -1,0 +1,75 @@
+[General]
+skip-proxy=127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+loglevel=notify
+ipv6=true
+interface=127.0.0.1
+enhanced-mode-by-rule=true
+exclude-simple-hostnames=true
+dns-server=system, 223.5.5.5, 114.114.114.114
+[Proxy]
+新加坡v6=vmess, 2001:19f0:4400:7127:5400:04ff:fe79:6d89,54321, username=48829ea2-1fd0-4b76-d495-62364b2adde0, ws=true, ws-path=/test
+新加坡v4=vmess, 45.32.116.41,54321, username=48829ea2-1fd0-4b76-d495-62364b2adde0, ws=true, ws-path=/test
+香港綜合=vmess, fb116e78-s3gcg0-s434xa-q5px.cm.chrome-api.net, 9510, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:fb116e78-s3gcg0-s434xa-q5px.cm.chrome-api.net
+香港HKT=vmess, c74a1d53-s3gcg0-s434xa-q5px.hkt.comefromchinatown.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:www.hgcbroadband.com
+香港精品=vmess, 9e3891e6-s3gcg0-s434xa-q5px.hkt.gotochinatown.net, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:broadcastlv.chat.bilibili.com
+香港HKT商業=vmess, 95da3f0c-s3gcg0-s434xa-q5px.hgc1.tcpbbr.net, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:95da3f0c-s3gcg0-s434xa-q5px.hgc1.tcpbbr.net
+香港宽频2=vmess, wtt2.comefromchinatown.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:images-eu.ssl-images-amazon.com
+香港宽频1=vmess, e0a74930-s3gcg0-s434xa-q5px.bn.p5pv.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:e0a74930-s3gcg0-s434xa-q5px.bn.p5pv.com
+香港WTT3=https, 5b94628e-s3gcg0-s434xa-q5px.wtt5.p5pv.com, 22443, 13069647698@163.com, 2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true
+美國硅谷=vmess, 3e607da6-s3gcg0-s434xa-q5px.sj2.comefromchinatown.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:3e607da6-s3gcg0-s434xa-q5px.sj2.comefromchinatown.com
+美國洛杉磯=vmess, b9f8d3d5-s3gcg0-s434xa-q5px.los.tcpbbr.net, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:b9f8d3d5-s3gcg0-s434xa-q5px.los.tcpbbr.net
+美國费利蒙=vmess, 5f29f7f2-s3gcg0-s434xa-q5px.fremont.comefromchinatown.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:www.hgcbroadband.com
+美國西雅圖=vmess, 1e68d4b7-s3gcg0-s434xa-q5px.us.tcpbbr.net, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:1e68d4b7-s3gcg0-s434xa-q5px.us.tcpbbr.net
+美國丹佛=https, c3e7629d-s3gcg0-s434xa-q5px.denver.p1pv.com, 443, 13069647698@163.com, 2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true
+英國=vmess, 512131b1-s3gcg0-s434xa-q5px.uk2.tcpbbr.net, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:512131b1-s3gcg0-s434xa-q5px.uk2.tcpbbr.net
+台灣=https, f2f3dcb3-s3gcg0-s434xa-q5px.tw4.tcpbbr.net, 61234, 13069647698@163.com, 2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true
+日本=vmess, 4814660b-s3gcg0-s434xa-q5px.jp.p5pv.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:broadcastlv.chat.bilibili.com
+韩國=vmess, ea42b87b-s3gcg0-s434xa-q5px.kr.p5pv.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:broadcastlv.chat.bilibili.com
+台湾2=trojan, 32bf3b97-s3gcg0-s434xa-q5px.tw3.p5pv.com, 443, password=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true, sni=32bf3b97-s3gcg0-s434xa-q5px.tw3.p5pv.com
+新加坡=vmess, bdb02b5c-s3gcg0-s434xa-q5px.sg.p5pv.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:bdb02b5c-s3gcg0-s434xa-q5px.sg.p5pv.com
+俄羅斯=https, 8f9903c5-s3gcg0-s434xa-q5px.ru.z7zi.com, 1007, 13069647698@163.com, 2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true
+德國=vmess, 4bc92732-s3gcg0-s434xa-q5px.de.comefromchinatown.com, 80, username=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, tls=false, ws=true, ws-path=/, ws-headers=host:4bc92732-s3gcg0-s434xa-q5px.de.comefromchinatown.com
+ChatGPT-02=https, 15b4d9d0-s3gcg0-s434xa-q5px.sj3.comefromchinatown.com, 27891, 13069647698@163.com, 2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true
+ChatGPT-01=trojan, 15b4d9d0-s3gcg0-s434xa-q5px.sj3.comefromchinatown.com, 27891, password=2347e282-08f6-11ee-bcb2-f23c91cfbbc9, skip-cert-verify=true, sni=15b4d9d0-s3gcg0-s434xa-q5px.sj3.comefromchinatown.com
+[Proxy Group]
+代理组选择=select, IPV6, Ghelper
+IPV6=select, 新加坡v6
+Ghelper=select, 全球智能, 香港智能, 香港綜合, 香港HKT, 香港精品, 香港HKT商業, 香港宽频2, 香港宽频1, 香港WTT3, 美國硅谷, 美國洛杉磯, 美國费利蒙, 美國西雅圖, 美國丹佛, 英國, 台灣, 日本, 韩國, 台湾2, 新加坡, 俄羅斯, 德國, ChatGPT专线
+全球智能=url-test, 香港綜合, 香港HKT, 香港精品, 香港HKT商業, 香港宽频2, 香港宽频1, 香港WTT3, 美國硅谷, 美國洛杉磯, 美國费利蒙, 美國西雅圖, 美國丹佛, 英國, 台灣, 日本, 韩國, 新加坡, 俄羅斯, 德國, ChatGPT-02, url=http://www.gstatic.com/generate_204, interval=7200
+香港智能=url-test, 香港綜合, 香港HKT, 香港精品, 香港HKT商業, 香港宽频2, 香港宽频1, 香港WTT3, 美國硅谷, 美國费利蒙, url=http://www.gstatic.com/generate_204, interval=7200
+ChatGPT专线=fallback, ChatGPT-02, ChatGPT-01
+[Rule]
+DOMAIN-KEYWORD,scholar.google,全球智能
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,wx.qq.com,DIRECT
+DOMAIN-KEYWORD,dlut,DIRECT
+DOMAIN-SUFFIX,icourse163.org,DIRECT
+DOMAIN-SUFFIX,music.163.com,DIRECT
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,tmall.com,DIRECT
+DOMAIN-SUFFIX,csdn.net,DIRECT
+DOMAIN-SUFFIX,chaoxing.com,DIRECT
+DOMAIN-SUFFIX,xuexi.cn,DIRECT
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,wanfangdata.com.cn,DIRECT
+DOMAIN-SUFFIX,openai.com,ChatGPT专线 
+DOMAIN-SUFFIX,auth0.com,ChatGPT专线 
+DOMAIN-SUFFIX,featuregates.org,ChatGPT专线 
+DOMAIN-SUFFIX,statsigapi.net,ChatGPT专线 
+DOMAIN-SUFFIX,intercom.io,ChatGPT专线 
+DOMAIN-SUFFIX,intercomcdn.com,ChatGPT专线 
+DOMAIN-SUFFIX,sentry.io,ChatGPT专线 
+DOMAIN-SUFFIX,sentry.dev,ChatGPT专线 
+DOMAIN-SUFFIX,ai.com,ChatGPT专线 
+DOMAIN-SUFFIX,claude.ai,ChatGPT专线 
+DOMAIN-SUFFIX,bing.com,ChatGPT专线 
+DOMAIN-SUFFIX,microsoftonline.com,ChatGPT专线 
+DOMAIN-SUFFIX,live.com,ChatGPT专线 
+DOMAIN-SUFFIX,msecnd.net,ChatGPT专线 
+DOMAIN-SUFFIX,msn.com,ChatGPT专线 
+DOMAIN-SUFFIX,bingapis.com,ChatGPT专线 
+DOMAIN-SUFFIX,bing.net,ChatGPT专线 
+DOMAIN-SUFFIX,windows.com,ChatGPT专线 
+DOMAIN-SUFFIX,microsoft.com,ChatGPT专线 
+FINAL,代理组选择
